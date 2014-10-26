@@ -6,7 +6,9 @@
     <button ng-click="div()">/</button>
     <button ng-click="times()">*</button>
     <button ng-click="clear()">C</button>
-    <div ng-repeat="value in values">
+    <ul class="list">
+        <li ng-repeat="value in values" class="item">
         <div><span>{{value.value}}</span><span>{{value.operation}}</span></div>
-    </div>
+        </li>
+    </ul>
 </div>
