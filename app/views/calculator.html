@@ -1,0 +1,12 @@
+<div ng-controller="test3App.CalculatorCtrl">
+    <h2>My Angular Calculator</h2>
+    <input type="text" id="valA" ng-model="valA" type="number">
+    <button ng-click="add()">+</button>
+    <button ng-click="sub()">-</button>
+    <button ng-click="div()">/</button>
+    <button ng-click="times()">*</button>
+    <button ng-click="clear()">C</button>
+    <div ng-repeat="value in values">
+        <div><span>{{value.value}}</span><span>{{value.operation}}</span></div>
+    </div>
+</div>
