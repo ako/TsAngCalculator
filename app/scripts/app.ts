@@ -12,7 +12,7 @@
  */
 module test3App {
     "use strict";
-    var test3App = angular.module("test3App", [])
+    var test3App = angular.module("test3App", ["ionic"])
         .controller("calculatorCtrl", CalculatorCtrl);
     console.log("initialized test3App: " + test3App);
 }
