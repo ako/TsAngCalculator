@@ -1,5 +1,8 @@
 <div ng-controller="test3App.CalculatorCtrl">
-    <h2>My Angular Calculator</h2>
+
+
+    <div class="bar bar-header bar-positive">    <h2>My Angular Calculator</h2>
+                                             </div>
 
     <div class="row">
         <div class="col-25">
@@ -21,10 +24,10 @@
                     <button class="button button-block" ng-click="clear()">AC</button>
                 </div>
                 <div class="col-25 calc-operation">
-                    <button class="button button-block">+/-</button>
+                    <button class="button button-block" ng-click="negate()">+/-</button>
                 </div>
                 <div class="col-25 calc-operation">
-                    <button class="button button-block">%</button>
+                    <button class="button button-block" ng-click="percentage()">%</button>
                 </div>
                 <div class="col-25 calc-operation">
                     <button class="button button-block" ng-click="div()">/</button>
@@ -32,27 +35,27 @@
             </div>
             <div class="row">
                 <div class="col-25 calc-number">
-                    <button class="button button-block">7</button>
+                    <button class="button button-block" ng-click="keyPressed('7')">7</button>
                 </div>
                 <div class="col-25 calc-number">
-                    <button class="button button-block">8</button>
+                    <button class="button button-block" ng-click="keyPressed('8')">8</button>
                 </div>
                 <div class="col-25 calc-number">
-                    <button class="button button-block">9</button>
+                    <button class="button button-block" ng-click="keyPressed('9')">9</button>
                 </div>
                 <div class="col-25 calc-operation">
-                    <button class="button button-block" ng-click="div()">*</button>
+                    <button class="button button-block" ng-click="times()">*</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-25 calc-number">
-                    <button class="button button-block">4</button>
+                    <button class="button button-block" ng-click="keyPressed('4')">4</button>
                 </div>
                 <div class="col-25 calc-number">
-                    <button class="button button-block">5</button>
+                    <button class="button button-block" ng-click="keyPressed('5')">5</button>
                 </div>
                 <div class="col-25 calc-number">
-                    <button class="button button-block">6</button>
+                    <button class="button button-block" ng-click="keyPressed('6')">6</button>
                 </div>
                 <div class="col-25 calc-operation">
                     <button class="button button-block" ng-click="sub()">-</button>
@@ -60,13 +63,13 @@
             </div>
             <div class="row">
                 <div class="col-25 calc-number">
-                    <button class="button  button-block">1</button>
+                    <button class="button  button-block" ng-click="keyPressed('1')">1</button>
                 </div>
                 <div class="col-25 calc-number">
-                    <button class="button button-block">2</button>
+                    <button class="button button-block" ng-click="keyPressed('2')">2</button>
                 </div>
                 <div class="col-25 calc-number">
-                    <button class="button button-block">3</button>
+                    <button class="button button-block" ng-click="keyPressed('3')">3</button>
                 </div>
                 <div class="col-25 calc-operation">
                     <button class="button button-block" ng-click="add()">+</button>
@@ -74,10 +77,10 @@
             </div>
             <div class="row">
                 <div class="col-50 calc-number">
-                    <button class="button button-block">0</button>
+                    <button class="button button-block" ng-click="keyPressed('0')">0</button>
                 </div>
                 <div class="col-25 calc-number">
-                    <button class="button button-block">,</button>
+                    <button class="button button-block" ng-click="keyPressed('.')">,</button>
                 </div>
                 <div class="col-25 calc-operation">
                     <button class="button button-block">=</button>
