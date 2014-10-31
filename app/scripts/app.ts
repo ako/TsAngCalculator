@@ -13,14 +13,14 @@
 module test3App {
     "use strict";
 
-    var test3App = angular.module("test3App", ["ui.router","ionic"])
+    var test3App = angular.module("test3App", ["ui.router", "ionic"])
         .controller("calculatorCtrl", CalculatorCtrl);
 
     console.log("initialized test3App: " + test3App);
     test3App.config( function($stateProvider, $urlRouterProvider) {
        $stateProvider
            .state("home", {url: "/home", templateUrl: "views/home.html" })
-           .state("reverse-polish", { url: "#/calculator/reverse-polish",
+           .state("reverse-polish", { url: "/calculator/reverse-polish",
                views: {"menuContent@" : {templateUrl: "views/reversepolish.html"}}} )
            .state("basic", { url: "/calculator/basic",
                views: {"menuContent" : {templateUrl: "views/basic.html"}}} )
