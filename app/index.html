@@ -23,12 +23,13 @@
 <ion-side-menus>
 
     <ion-pane ion-side-menu-content>
-        <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-            <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+            <ion-nav-back-button class="button-clear">
+                <i class="icon ion-ios7-arrow-back"></i> Back
+            </ion-nav-back-button>
         </ion-nav-bar>
-        <ion-content  animation="slide-left-right">
-            <div ng-include="'views/calculator.html'" ></div>
-        </ion-content>
+        <ion-nav-view  animation="slide-left-right" name="menuContent">
+        </ion-nav-view>
     </ion-pane>
 
     <ion-side-menu side="left"  expose-aside-when="large">
@@ -37,17 +38,20 @@
         </header>
         <ion-content class="has-header">
             <ion-list>
-                <ion-item nav-clear menu-close ng-click="login()">
-                    Login
+                <ion-item nav-clear menu-close href="/calculator/reverse-polish">
+                    Reverse Polish
                 </ion-item>
-                <ion-item nav-clear menu-close href="#/app/search">
-                    Search
+                <ion-item nav-clear menu-close href="/calculator/basic">
+                    Basic
                 </ion-item>
-                <ion-item nav-clear menu-close href="#/app/browse">
-                    Browse
+                <ion-item nav-clear menu-close href="/calculator/scientific">
+                    Scientific
                 </ion-item>
-                <ion-item nav-clear menu-close href="#/app/playlists">
-                    Playlists
+                <ion-item nav-clear menu-close href="/calculator/wolfram">
+                    Wolfram
+                </ion-item>
+                <ion-item nav-clear menu-close href="/calculator/wind">
+                    Wind
                 </ion-item>
             </ion-list>
         </ion-content>
